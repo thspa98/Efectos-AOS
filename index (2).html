@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thomás Spalletti | Pre‑tesina</title>
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <!-- Tipografía: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0912;        /* Paleta morada elegante y moderna */
+      --fg:#ECEBFF;
+      --accent:#A78BFA;    /* violeta suave */
+      --accent2:#7C3AED;   /* violeta intenso */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial; background:var(--bg); color:var(--fg); line-height:1.6}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1040px; margin:0 auto; padding:0 20px}
+    /* Hero */
+    .hero{
+      min-height:90vh; display:grid; place-items:center;
+      background:
+        radial-gradient(1200px 500px at 80% -10%, rgba(167,139,250,.16), transparent 60%),
+        radial-gradient(800px 500px at 10% 10%, rgba(124,58,237,.14), transparent 60%);
+    }
+    .hero-inner{display:grid; grid-template-columns: 1fr; gap:24px; text-align:center}
+    .tag{display:inline-block; padding:6px 10px; border:1px solid rgba(255,255,255,.12); border-radius:999px; font-size:.9rem; backdrop-filter: blur(6px)}
+    .title{font-size:clamp(2rem, 5vw, 3.5rem); line-height:1.1; font-weight:800; letter-spacing:.2px}
+    .title .grad{
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .subtitle{opacity:.9}
+    .cta{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:4px}
+    .btn{padding:10px 16px; border-radius:14px; border:1px solid rgba(255,255,255,.14); background:rgba(255,255,255,.03)}
+    .btn.primary{background:linear-gradient(135deg, var(--accent), var(--accent2)); color:#0b0912; font-weight:700; border:0}
+    /* Secciones */
+    section{padding:72px 0; border-top:1px solid rgba(255,255,255,.06)}
+    h2{font-size:clamp(1.3rem, 2.8vw, 2rem); margin:0 0 12px; color:var(--accent)}
+    .grid{display:grid; gap:24px}
+    @media (min-width: 860px){
+      .hero-inner{grid-template-columns: 1.2fr .8fr; align-items:center; text-align:left}
+      .grid.cols-2{grid-template-columns:1fr 1fr}
+    }
+    .card{padding:20px; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); border-radius:16px}
+    .pill{display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(124,58,237,.12); border:1px solid rgba(124,58,237,.4)}
+    .skills{display:flex; flex-wrap:wrap; gap:10px}
+    .avatar{width:220px; height:220px; border-radius:50%; object-fit:cover; border:2px solid rgba(255,255,255,.14); box-shadow: 0 10px 30px rgba(0,0,0,.35); background: radial-gradient(120px 120px at 70% 20%, rgba(255,255,255,.08), transparent 60%)}
+    footer{padding:40px 0; text-align:center; opacity:.85}
+  </style>
+</head>
+<body>
+  <!-- HERO / PRESENTACIÓN -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div data-aos="flip-left" data-aos-duration="900">
+        <span class="tag">Pre‑tesina · Landing personal</span>
+        <h1 class="title">Hola, soy <span class="grad">Thomás Spalletti</span></h1>
+        <p class="subtitle">Me interesan el desarrollo web, la IA aplicada y la fabricación digital. Este es mi sitio individual para la pre‑tesina.</p>
+        <div class="cta">
+          <a class="btn primary" href="#habilidades">Ver habilidades</a>
+          <a class="btn" href="#objetivos">Mis objetivos</a>
+        </div>
+      </div>
+      <div style="display:grid; place-items:center" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="150">
+        <img class="avatar" src="./avatar.png" alt="Foto de Thomás Spalletti recortada" />
+      </div>
+    </div>
+  </header>
+
+  <!-- HABILIDADES Y CONOCIMIENTOS -->
+  <section id="habilidades">
+    <div class="container grid cols-2">
+      <div class="card" data-aos="slide-up" data-aos-duration="900">
+        <h2>Habilidades actuales</h2>
+        <div class="skills">
+          <span class="pill">HTML • CSS</span>
+          <span class="pill">JavaScript básico</span>
+          <span class="pill">PHP (nivel inicial)</span>
+          <span class="pill">Python básico</span>
+          <span class="pill">Diseño visual digital</span>
+          <span class="pill">Branding</span>
+          <span class="pill">Filmación</span>
+          <span class="pill">Organización</span>
+          <span class="pill">Administración de RR. HH.</span>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+        <h2>Conocimientos</h2>
+        <p>Python básico; diseño visual digital; todo lo que es branding; filmación. También manejo estructuras web básicas y control de versiones (Git/GitHub) y exploro librerías como AOS para animaciones on‑scroll.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJETIVOS / FUTURO -->
+  <section id="objetivos">
+    <div class="container grid cols-2">
+      <div class="card" data-aos="flip-left" data-aos-duration="900">
+        <h2>Objetivos</h2>
+        <ul>
+          <li>Profundizar en Python.</li>
+          <li>Aprender diseño de interfaces y accesibilidad.</li>
+          <li>Terminar mi proyecto de pre‑tesina (OPIFEX), presentarlo como un proyecto exitoso.</li>
+        </ul>
+      </div>
+      <div class="card" data-aos="zoom-out" data-aos-duration="900" data-aos-delay="120">
+        <h2>Próximos pasos</h2>
+        <p>En los próximos 6 meses, voy a empezar a trabajar con OPIFEX de una forma más seria y formal usando mis habilidades y conocimientos previamente comentados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO / FOOTER -->
+  <footer>
+    <div class="container" data-aos="slide-up" data-aos-duration="800">
+      <p>Contacto: <a href="mailto:thomasspalletti98@gmail.com">thomasspalletti98@gmail.com</a> · © <span id="y"></span></p>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      offset: 70,
+      duration: 700,
+      easing: 'ease-out'
+    });
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
